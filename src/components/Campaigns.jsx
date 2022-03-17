@@ -6,7 +6,7 @@ export const Campaigns = ({ campaigns = [] }) => {
   const items = useMemo(() => campaigns.map(address => ({
     header: address,
     description: (
-      <Link href={`/campaigns/${address}`}>
+      <Link href={`/campaigns/show?address=${address}`}>
         <a>View Campaign</a>
       </Link>
     ),
